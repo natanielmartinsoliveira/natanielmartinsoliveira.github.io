@@ -1,13 +1,700 @@
-<!doctype html>
-<html lang="en" data-critters-container>
+<!DOCTYPE html>
+<html lang="pt-BR">
 <head>
-  <meta charset="utf-8">
-  <title>HitMarketing</title>
-  <base href="/">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-<style>@import"https://fonts.googleapis.com/css?family=Montserrat:500,700";*{margin:0;padding:0;box-sizing:border-box}body{font-family:Arial,sans-serif;background-color:#2d2d2d!important;width:100%;margin:0 auto}@charset "UTF-8";:root{--bs-blue:#0d6efd;--bs-indigo:#6610f2;--bs-purple:#6f42c1;--bs-pink:#d63384;--bs-red:#dc3545;--bs-orange:#fd7e14;--bs-yellow:#ffc107;--bs-green:#198754;--bs-teal:#20c997;--bs-cyan:#0dcaf0;--bs-black:#000;--bs-white:#fff;--bs-gray:#6c757d;--bs-gray-dark:#343a40;--bs-gray-100:#f8f9fa;--bs-gray-200:#e9ecef;--bs-gray-300:#dee2e6;--bs-gray-400:#ced4da;--bs-gray-500:#adb5bd;--bs-gray-600:#6c757d;--bs-gray-700:#495057;--bs-gray-800:#343a40;--bs-gray-900:#212529;--bs-primary:#0d6efd;--bs-secondary:#6c757d;--bs-success:#198754;--bs-info:#0dcaf0;--bs-warning:#ffc107;--bs-danger:#dc3545;--bs-light:#f8f9fa;--bs-dark:#212529;--bs-primary-rgb:13,110,253;--bs-secondary-rgb:108,117,125;--bs-success-rgb:25,135,84;--bs-info-rgb:13,202,240;--bs-warning-rgb:255,193,7;--bs-danger-rgb:220,53,69;--bs-light-rgb:248,249,250;--bs-dark-rgb:33,37,41;--bs-primary-text-emphasis:#052c65;--bs-secondary-text-emphasis:#2b2f32;--bs-success-text-emphasis:#0a3622;--bs-info-text-emphasis:#055160;--bs-warning-text-emphasis:#664d03;--bs-danger-text-emphasis:#58151c;--bs-light-text-emphasis:#495057;--bs-dark-text-emphasis:#495057;--bs-primary-bg-subtle:#cfe2ff;--bs-secondary-bg-subtle:#e2e3e5;--bs-success-bg-subtle:#d1e7dd;--bs-info-bg-subtle:#cff4fc;--bs-warning-bg-subtle:#fff3cd;--bs-danger-bg-subtle:#f8d7da;--bs-light-bg-subtle:#fcfcfd;--bs-dark-bg-subtle:#ced4da;--bs-primary-border-subtle:#9ec5fe;--bs-secondary-border-subtle:#c4c8cb;--bs-success-border-subtle:#a3cfbb;--bs-info-border-subtle:#9eeaf9;--bs-warning-border-subtle:#ffe69c;--bs-danger-border-subtle:#f1aeb5;--bs-light-border-subtle:#e9ecef;--bs-dark-border-subtle:#adb5bd;--bs-white-rgb:255,255,255;--bs-black-rgb:0,0,0;--bs-font-sans-serif:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans","Liberation Sans",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";--bs-font-monospace:SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;--bs-gradient:linear-gradient(180deg, rgba(255, 255, 255, .15), rgba(255, 255, 255, 0));--bs-body-font-family:var(--bs-font-sans-serif);--bs-body-font-size:1rem;--bs-body-font-weight:400;--bs-body-line-height:1.5;--bs-body-color:#212529;--bs-body-color-rgb:33,37,41;--bs-body-bg:#fff;--bs-body-bg-rgb:255,255,255;--bs-emphasis-color:#000;--bs-emphasis-color-rgb:0,0,0;--bs-secondary-color:rgba(33, 37, 41, .75);--bs-secondary-color-rgb:33,37,41;--bs-secondary-bg:#e9ecef;--bs-secondary-bg-rgb:233,236,239;--bs-tertiary-color:rgba(33, 37, 41, .5);--bs-tertiary-color-rgb:33,37,41;--bs-tertiary-bg:#f8f9fa;--bs-tertiary-bg-rgb:248,249,250;--bs-heading-color:inherit;--bs-link-color:#0d6efd;--bs-link-color-rgb:13,110,253;--bs-link-decoration:underline;--bs-link-hover-color:#0a58ca;--bs-link-hover-color-rgb:10,88,202;--bs-code-color:#d63384;--bs-highlight-color:#212529;--bs-highlight-bg:#fff3cd;--bs-border-width:1px;--bs-border-style:solid;--bs-border-color:#dee2e6;--bs-border-color-translucent:rgba(0, 0, 0, .175);--bs-border-radius:.375rem;--bs-border-radius-sm:.25rem;--bs-border-radius-lg:.5rem;--bs-border-radius-xl:1rem;--bs-border-radius-xxl:2rem;--bs-border-radius-2xl:var(--bs-border-radius-xxl);--bs-border-radius-pill:50rem;--bs-box-shadow:0 .5rem 1rem rgba(0, 0, 0, .15);--bs-box-shadow-sm:0 .125rem .25rem rgba(0, 0, 0, .075);--bs-box-shadow-lg:0 1rem 3rem rgba(0, 0, 0, .175);--bs-box-shadow-inset:inset 0 1px 2px rgba(0, 0, 0, .075);--bs-focus-ring-width:.25rem;--bs-focus-ring-opacity:.25;--bs-focus-ring-color:rgba(13, 110, 253, .25);--bs-form-valid-color:#198754;--bs-form-valid-border-color:#198754;--bs-form-invalid-color:#dc3545;--bs-form-invalid-border-color:#dc3545}*,:after,:before{box-sizing:border-box}@media (prefers-reduced-motion:no-preference){:root{scroll-behavior:smooth}}body{margin:0;font-family:var(--bs-body-font-family);font-size:var(--bs-body-font-size);font-weight:var(--bs-body-font-weight);line-height:var(--bs-body-line-height);color:var(--bs-body-color);text-align:var(--bs-body-text-align);background-color:var(--bs-body-bg);-webkit-text-size-adjust:100%;-webkit-tap-highlight-color:transparent}:root{--bs-breakpoint-xs:0;--bs-breakpoint-sm:576px;--bs-breakpoint-md:768px;--bs-breakpoint-lg:992px;--bs-breakpoint-xl:1200px;--bs-breakpoint-xxl:1400px}</style><link rel="stylesheet" href="styles.847fdfb1612af531.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="styles.847fdfb1612af531.css"></noscript></head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NATABYTE | Software Engineering & AI Systems</title>
+  <meta name="description" content="Portfólio de Nataniel Oliveira, desenvolvedor Full Stack Sênior com experiência em PHP, Laravel, Node.js, React, Vue, Angular, IA, automações e fundador do Zyrah." />
+
+  <style>
+    :root {
+      --bg: #0f1117;
+      --bg-soft: #171a23;
+      --card: rgba(255, 255, 255, 0.06);
+      --card-border: rgba(255, 255, 255, 0.12);
+      --text: #f6f7fb;
+      --muted: #a7adbd;
+      --pink: #e05297;
+      --pink-soft: #f7c6da;
+      --blue: #1288ff;
+      --cyan: #18d4ff;
+      --purple: #8b5cf6;
+      --green: #35d0a2;
+      --shadow: 0 24px 80px rgba(0, 0, 0, 0.35);
+      --radius: 24px;
+      --max: 1120px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background:
+        radial-gradient(circle at top left, rgba(18, 136, 255, 0.24), transparent 32%),
+        radial-gradient(circle at top right, rgba(24, 212, 255, 0.14), transparent 28%),
+        var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      width: min(100% - 32px, var(--max));
+      margin: 0 auto;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      backdrop-filter: blur(18px);
+      background: rgba(15, 17, 23, 0.72);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    nav {
+      height: 76px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 24px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 800;
+      letter-spacing: -0.04em;
+      font-size: 1.1rem;
+    }
+
+    .brand-logo {
+      height: 42px;
+      width: auto;
+      display: block;
+      filter: drop-shadow(0 10px 26px rgba(18, 136, 255, 0.38));
+    }
+
+    .brand-text {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+      clip: rect(0 0 0 0);
+      white-space: nowrap;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      color: var(--muted);
+      font-size: 0.94rem;
+    }
+
+    .nav-links a:hover {
+      color: var(--text);
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      min-height: 46px;
+      padding: 0 18px;
+      border-radius: 999px;
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      font-weight: 700;
+      transition: transform 0.2s ease, border-color 0.2s ease, background 0.2s ease;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+      border-color: rgba(255, 255, 255, 0.3);
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, var(--blue), var(--cyan));
+      color: white;
+      border: none;
+      box-shadow: 0 18px 45px rgba(18, 136, 255, 0.35);
+    }
+
+    .hero {
+      padding: 92px 0 72px;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 42px;
+      align-items: center;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 14px;
+      margin-bottom: 22px;
+      border-radius: 999px;
+      background: rgba(18, 136, 255, 0.12);
+      border: 1px solid rgba(24, 212, 255, 0.24);
+      color: #bfeaff;
+      font-weight: 700;
+      font-size: 0.88rem;
+    }
+
+    h1 {
+      font-size: clamp(2.65rem, 6vw, 5.65rem);
+      line-height: 0.94;
+      letter-spacing: -0.075em;
+      margin-bottom: 24px;
+    }
+
+    .gradient-text {
+      background: linear-gradient(135deg, #fff, #bfeaff 45%, #1288ff);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    .hero p {
+      max-width: 650px;
+      color: var(--muted);
+      font-size: 1.12rem;
+      margin-bottom: 30px;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-bottom: 30px;
+    }
+
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+      margin-top: 28px;
+    }
+
+    .stat {
+      padding: 18px;
+      border-radius: 18px;
+      background: var(--card);
+      border: 1px solid var(--card-border);
+    }
+
+    .stat strong {
+      display: block;
+      font-size: 1.5rem;
+      line-height: 1;
+    }
+
+    .stat span {
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    .hero-card {
+      position: relative;
+      padding: 26px;
+      border-radius: var(--radius);
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.04));
+      border: 1px solid var(--card-border);
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+
+    .hero-card::before {
+      content: "";
+      position: absolute;
+      inset: -80px -60px auto auto;
+      width: 180px;
+      height: 180px;
+      border-radius: 999px;
+      background: rgba(224, 82, 151, 0.32);
+      filter: blur(20px);
+    }
+
+    .terminal {
+      position: relative;
+      border-radius: 20px;
+      background: #0a0c12;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      overflow: hidden;
+    }
+
+    .terminal-top {
+      display: flex;
+      gap: 8px;
+      padding: 14px;
+      background: rgba(255, 255, 255, 0.05);
+    }
+
+    .dot {
+      width: 11px;
+      height: 11px;
+      border-radius: 999px;
+      background: var(--pink);
+      opacity: 0.9;
+    }
+
+    .terminal-body {
+      padding: 22px;
+      font-family: "SFMono-Regular", Consolas, monospace;
+      color: #d8e1ff;
+      font-size: 0.92rem;
+    }
+
+    .terminal-body span {
+      color: var(--green);
+    }
+
+    section {
+      padding: 68px 0;
+    }
+
+    .section-title {
+      max-width: 760px;
+      margin-bottom: 28px;
+    }
+
+    .section-title h2 {
+      font-size: clamp(2rem, 4vw, 3.2rem);
+      letter-spacing: -0.06em;
+      line-height: 1;
+      margin-bottom: 14px;
+    }
+
+    .section-title p {
+      color: var(--muted);
+      font-size: 1.05rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .card {
+      padding: 24px;
+      border-radius: var(--radius);
+      background: var(--card);
+      border: 1px solid var(--card-border);
+      box-shadow: 0 18px 60px rgba(0, 0, 0, 0.16);
+    }
+
+    .card h3 {
+      font-size: 1.12rem;
+      margin-bottom: 10px;
+      letter-spacing: -0.025em;
+    }
+
+    .card p, .card li {
+      color: var(--muted);
+    }
+
+    .icon {
+      width: 46px;
+      height: 46px;
+      display: grid;
+      place-items: center;
+      border-radius: 16px;
+      margin-bottom: 18px;
+      background: rgba(18, 136, 255, 0.13);
+      color: #bfeaff;
+      font-size: 1.35rem;
+    }
+
+    .project-feature {
+      display: grid;
+      grid-template-columns: 0.9fr 1.1fr;
+      gap: 22px;
+      align-items: stretch;
+    }
+
+    .zyrah-box {
+      padding: 34px;
+      min-height: 100%;
+      background:
+        linear-gradient(135deg, rgba(18, 136, 255, 0.24), rgba(24, 212, 255, 0.12)),
+        var(--card);
+    }
+
+    .tag-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 18px;
+    }
+
+    .tag {
+      padding: 8px 12px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      color: #e9ecf7;
+      font-size: 0.88rem;
+      font-weight: 650;
+    }
+
+    .timeline {
+      display: grid;
+      gap: 14px;
+    }
+
+    .timeline-item {
+      display: grid;
+      grid-template-columns: 150px 1fr;
+      gap: 18px;
+      padding: 22px;
+      border-radius: 20px;
+      background: rgba(255, 255, 255, 0.045);
+      border: 1px solid rgba(255, 255, 255, 0.09);
+    }
+
+    .time {
+      color: var(--pink-soft);
+      font-weight: 800;
+    }
+
+    .timeline-item h3 {
+      margin-bottom: 6px;
+    }
+
+    .timeline-item p {
+      color: var(--muted);
+    }
+
+    .contact {
+      padding: 42px;
+      border-radius: 32px;
+      background: linear-gradient(135deg, rgba(18, 136, 255, 0.22), rgba(255, 255, 255, 0.06));
+      border: 1px solid rgba(255, 255, 255, 0.13);
+      display: flex;
+      justify-content: space-between;
+      gap: 24px;
+      align-items: center;
+    }
+
+    .contact h2 {
+      font-size: clamp(2rem, 4vw, 3rem);
+      line-height: 1;
+      letter-spacing: -0.055em;
+      margin-bottom: 12px;
+    }
+
+    .contact p {
+      color: var(--muted);
+      max-width: 650px;
+    }
+
+    footer {
+      padding: 34px 0 50px;
+      color: var(--muted);
+      text-align: center;
+    }
+
+    @media (max-width: 900px) {
+      .hero-grid,
+      .project-feature,
+      .contact {
+        grid-template-columns: 1fr;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .grid {
+        grid-template-columns: 1fr;
+      }
+
+      .stats {
+        grid-template-columns: 1fr;
+      }
+
+      .nav-links {
+        display: none;
+      }
+
+      .timeline-item {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
 <body>
-  <app-root></app-root>
-<script src="runtime.a9d430c0aa0fbec8.js" type="module"></script><script src="polyfills.853e19e5a8934168.js" type="module"></script><script src="main.1602f375b679c4c0.js" type="module"></script></body>
+  <header>
+    <div class="container">
+      <nav>
+        <a href="#top" class="brand" aria-label="Ir para o início">
+          <img class="brand-logo" src="assets/natabyte-logo.png" alt="NATABYTE" />
+          <span class="brand-text">NATABYTE</span>
+        </a>
+
+        <div class="nav-links">
+          <a href="#sobre">Sobre</a>
+          <a href="#zyrah">Zyrah</a>
+          <a href="#experiencia">Experiência</a>
+          <a href="#contato" class="btn">Contato</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <div class="eyebrow">NATABYTE • Software Engineering • IA • SaaS</div>
+          <img src="assets/natabyte-logo.png" alt="Logo NATABYTE" style="width: min(100%, 360px); margin-bottom: 26px; filter: drop-shadow(0 20px 55px rgba(18, 136, 255, .42));" />
+          <h1>Eu crio sistemas que tiram ideias do papel e colocam para trabalhar.</h1>
+          <p>
+            A NATABYTE é uma software house focada em desenvolvimento Full Stack, sistemas inteligentes, APIs, automações, plataformas SaaS e arquitetura moderna. Entre os projetos em construção está o Zyrah, uma plataforma operacional para gestão inteligente de atendimento e conversas.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#zyrah" class="btn btn-primary">Conhecer o Zyrah</a>
+            <a href="#experiencia" class="btn">Ver experiência</a>
+          </div>
+
+          <div class="stats">
+            <div class="stat">
+              <strong>10+</strong>
+              <span>anos em tecnologia</span>
+            </div>
+            <div class="stat">
+              <strong>Full</strong>
+              <span>backend, frontend e infra</span>
+            </div>
+            <div class="stat">
+              <strong>IA</strong>
+              <span>automações e agentes</span>
+            </div>
+          </div>
+        </div>
+
+        <aside class="hero-card" aria-label="Resumo técnico">
+          <div class="terminal">
+            <div class="terminal-top">
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+            </div>
+            <div class="terminal-body">
+              <p><span>$</span> stack --profile</p>
+              <br />
+              <p>PHP • Laravel • Node.js • NestJS</p>
+              <p>React • React Native • Vue • Angular</p>
+              <p>PostgreSQL • MySQL • MongoDB • Redis</p>
+              <p>RabbitMQ • Docker • Cloudflare • AWS</p>
+              <br />
+              <p><span>$</span> mission</p>
+              <p>Construir produtos úteis, escaláveis e bonitos.</p>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="sobre">
+      <div class="container">
+        <div class="section-title">
+          <h2>Da manutenção de legado ao produto próprio.</h2>
+          <p>
+            Minha trajetória passa por sistemas corporativos, produtos digitais, e-commerce, APIs, automações, integrações e plataformas com alto volume de regras de negócio. Gosto de transformar caos técnico em arquitetura clara, sem tratar código como novela mexicana com deploy na sexta.
+          </p>
+        </div>
+
+        <div class="grid">
+          <article class="card">
+            <div class="icon">⚙️</div>
+            <h3>Backend & Arquitetura</h3>
+            <p>APIs, microsserviços, filas, integrações, autenticação, modelagem de dados, mensageria e organização de domínios.</p>
+          </article>
+
+          <article class="card">
+            <div class="icon">🖥️</div>
+            <h3>Frontend & Produto</h3>
+            <p>Interfaces web e mobile com React, React Native, Vue e Angular, buscando clareza, performance e experiência premium.</p>
+          </article>
+
+          <article class="card">
+            <div class="icon">🤖</div>
+            <h3>IA & Automação</h3>
+            <p>Uso de IA, agentes, fluxos automatizados, análise de contexto e integração com serviços externos para ganhar escala operacional.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="zyrah">
+      <div class="container project-feature">
+        <article class="card zyrah-box">
+          <div class="eyebrow">Projeto atual</div>
+          <h2 class="gradient-text" style="font-size: clamp(2.3rem, 5vw, 4.5rem); line-height: .95; letter-spacing: -0.07em; margin-bottom: 18px;">Zyrah</h2>
+          <p>
+            O Zyrah nasce como uma central operacional para atendimento, gestão de clientes, automações e conversas inteligentes. A ideia é sair do improviso e criar uma camada profissional para quem precisa controlar operação, contexto e relacionamento em tempo real.
+          </p>
+          <div class="tag-list">
+            <span class="tag">NestJS</span>
+            <span class="tag">React Native</span>
+            <span class="tag">Redis</span>
+            <span class="tag">RabbitMQ</span>
+            <span class="tag">OpenRouter</span>
+            <span class="tag">Cloudflare</span>
+            <span class="tag">n8n</span>
+          </div>
+        </article>
+
+        <div class="grid" style="grid-template-columns: 1fr 1fr;">
+          <article class="card">
+            <div class="icon">💬</div>
+            <h3>Atendimento inteligente</h3>
+            <p>Conversas com contexto, histórico, retorno de clientes, tom adaptável e possibilidade de intervenção humana.</p>
+          </article>
+
+          <article class="card">
+            <div class="icon">📊</div>
+            <h3>Operação em tempo real</h3>
+            <p>Painel para priorizar alertas, acompanhar conversas pausadas, assumir atendimento e devolver ao bot.</p>
+          </article>
+
+          <article class="card">
+            <div class="icon">🧩</div>
+            <h3>Arquitetura plugável</h3>
+            <p>Adapters para canais, provedores de IA e integrações externas, evitando dependência dura de um único serviço.</p>
+          </article>
+
+          <article class="card">
+            <div class="icon">🛡️</div>
+            <h3>Confiança e segurança</h3>
+            <p>Camadas de validação, score, flags operacionais e integração com dados auxiliares para reduzir risco.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="experiencia">
+      <div class="container">
+        <div class="section-title">
+          <h2>Projetos, empresas e estrada técnica.</h2>
+          <p>
+            Já atuei em diferentes contextos: consultorias, produtos digitais, sistemas corporativos, legados PHP, aplicações modernas, bancos relacionais e NoSQL, serviços em nuvem e integrações pesadas.
+          </p>
+        </div>
+
+        <div class="timeline">
+          <article class="timeline-item">
+            <div class="time">2020 — Atual</div>
+            <div>
+              <h3>Lyncas • Desenvolvimento Sênior</h3>
+              <p>Projetos com Laravel, PHP, JavaScript, Vue, React, Node.js, Adonis, Express, TypeORM, MongoDB, MySQL, AWS, OpenSearch e Electron.</p>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="time">2020</div>
+            <div>
+              <h3>ClinicarX • Desenvolvimento Pleno</h3>
+              <p>Manutenção e evolução de sistemas com CakePHP, Laravel, AngularJS, Angular, Ionic, HTML, CSS e JavaScript.</p>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="time">2019 — 2020</div>
+            <div>
+              <h3>Mouts, Supero, Credpago e Capitani</h3>
+              <p>Atuação com PHP, CodeIgniter, Oracle, AngularJS, sistemas legados, suporte, layouts, procedimentos de banco e desenvolvimento full stack.</p>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="time">2012 — 2017</div>
+            <div>
+              <h3>AFAG Engenharia e Sixweb TI</h3>
+              <p>Desenvolvimento PHP, MySQL, C#.NET, SQL Server, WPF, Webservices REST/SOAP, Drupal, WordPress, e-commerce, HTML, CSS e JavaScript.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="section-title">
+          <h2>Stack principal.</h2>
+          <p>Ferramentas que aparecem com frequência no meu arsenal de construção.</p>
+        </div>
+
+        <div class="tag-list">
+          <span class="tag">PHP</span>
+          <span class="tag">Laravel</span>
+          <span class="tag">Node.js</span>
+          <span class="tag">NestJS</span>
+          <span class="tag">React</span>
+          <span class="tag">React Native</span>
+          <span class="tag">Vue.js</span>
+          <span class="tag">Angular</span>
+          <span class="tag">PostgreSQL</span>
+          <span class="tag">MySQL</span>
+          <span class="tag">MongoDB</span>
+          <span class="tag">Redis</span>
+          <span class="tag">RabbitMQ</span>
+          <span class="tag">Docker</span>
+          <span class="tag">Cloudflare</span>
+          <span class="tag">AWS</span>
+          <span class="tag">OpenSearch</span>
+          <span class="tag">Clean Code</span>
+          <span class="tag">SOLID</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="contato">
+      <div class="container">
+        <div class="contact">
+          <div>
+            <h2>Software moderno, escalável e pronto para operação real.</h2>
+            <p>
+              A NATABYTE atua com desenvolvimento de software, arquitetura de sistemas, APIs, automações, IA, plataformas SaaS e modernização de aplicações.
+            </p>
+          </div>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="mailto:natanieldivi@gmail.com">Contato Comercial</a>
+            <a class="btn" href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>© <span id="year"></span> NATABYTE • NATANIEL MARTINS DESENVOLVIMENTO DE SOFTWARE LTDA • CNPJ 59.566.616/0001-77</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
 </html>
